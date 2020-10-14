@@ -1,0 +1,162 @@
+:root{
+    --color-primary:#0278AE;
+    --color-secondary:#51ADCF;
+    --green:#A5ECD7;
+    --green-dark:#02AE13;
+    --yellow:#E8FFC1;
+    --light-blue:#07F8E9;
+    --light:#fff;
+    --dark:#000;
+    --montserrat:'Montserrat', sans-serif;
+}
+
+main{
+    margin:5rem 0
+}
+.notas{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notas-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-notas{
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.notas-p {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.hr{
+    width: 80px;
+    height: 2px;
+    background: var(--color-primary);
+    margin-bottom: 1rem;
+}
+.form-p{
+    width: 80%;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.formulario input{
+    width: 80%;
+    margin-bottom: 1rem;
+}
+.adjuntar{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 80%;
+}
+
+/* ::::::::::::::::::::::::::: PASOS PARA PUBLICAR */
+
+.pasos-content-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+.pasos-title{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.pasos span{
+    display: inline-block;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/* :::: listado de Proveedores */
+.bg-1{
+    background: #92DDD3;
+}
+.bg-2{
+    background: #FFC26E;
+}
+.proveedores{
+    padding: 40px 10px;
+    margin: 0;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-listado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.number span{
+    display: inline-block;
+    font-size: 4em;
+    color: var(--light);
+    font-weight: 600;
+}
+.proveedores-title{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--light);
+}
+.proveedores-text{
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--light);
+}
+.pasos-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+[class*="fas"] {
+    color: var(--light);
+    font-size: 200px;
+}
+.img-3{
+    width: 60%;
+}
+
+@media screen and (min-width: 320px) and (max-width:429px){
+    .title-notas{
+        text-align: center;
+    }
+    .notas-p{
+        text-align: center;
+    }
+    .formulario input{
+        width:100%;
+    }
+    .file-upload{
+        width: 50%!important;
+    }
+    .form-p{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+    }
+}

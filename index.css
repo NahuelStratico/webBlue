@@ -1,0 +1,378 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--montserrat);
+}
+
+
+:root{
+    --color-primary:#0278AE;
+    --color-secondary:#51ADCF;
+    --green:#A5ECD7;
+    --green-dark:#02AE13;
+    --yellow:#E8FFC1;
+    --light-blue:#07F8E9;
+    --light:#fff;
+    --dark:#000;
+    --montserrat:'Montserrat', sans-serif;
+}
+
+/* ::::::::::: config */
+.row{
+    margin-right: 0!important;
+}
+
+.error-404{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.error-404 h2{
+margin-top: 1rem;
+ font-weight: 700;
+ text-align: center;
+}
+.error-404 h2 span{
+    color: #4632da;
+
+}
+
+
+/* ::::::::::::::::::::::: Navbar */
+.navbar{
+    background-color: var(--light)!important;
+    padding: 0;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 0.125rem 0.25rem;
+    z-index: 10;
+}
+.menu-container{
+    background-color: var(--light)!important;
+    height: 80px;
+}
+.logo{
+    width:80px;
+    height: 80px;
+}
+.navbar-toggler{
+    outline: none!important;
+    border: none;
+}
+.nav-item{
+    padding-left: 20px;
+}
+.nav-link{
+    color: var(--dark)!important;
+    font-family: var(--montserrat);
+    font-size: 1em;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color:var(--color-primary)!important;
+}
+.web{
+    background: #4632da;
+    padding: 0;
+    border-radius: 40px;
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
+}
+.a-web{
+    color: var(--light)!important;
+    font-weight: 600!important;
+}
+.web:hover{
+    background:var(--light-blue);
+   
+}
+.a-web:hover{
+    color: var(--color-primary);
+}
+
+/* ::::::::::::::::::::::::::  Banner */
+.banner-container{
+    background: #f1f1f1;
+}
+.row-banner{
+    padding: 20px 0 0 0;
+}
+.img_banner{
+    width: 500px;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.banner-title, .banner-span{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+.banner-title{
+     margin-bottom: 0;
+}
+.banner-span{
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+.banner-p{
+    margin-bottom: 2rem;
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* :::::::::::::::::::::::::: Como trabajamos */
+.trabajamos{
+    margin-bottom: 4rem;
+}
+.title-trabajamos{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.trabajamos-title_content{
+    text-align: center;
+    margin: 4rem 0;
+}
+.trabajamos-hr{
+    display: inline-block;
+    width: 100px;
+    height: 3px;
+    background:var(--color-primary);
+}
+.work-content_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.work-subtitle{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 1.4rem;
+}
+.work-p{
+    font-size: 1.1em;
+    width: 90%;
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 1.5rem;
+}
+.work-img{
+    width: 70%;
+    border: 1px solid var(--color-primary);
+    -webkit-box-shadow: 0px 4px 12px 0px rgba(37, 37, 37, 0.25);
+    -moz-box-shadow: 0px 4px 12px 0pxrgba(37, 37, 37, 0.25);
+    box-shadow: 0px 4px 12px 0px rgba(37, 37, 37, 0.25);
+}
+
+/* :::::::::::::::::::::::::::::::::: Customers */
+.customers{
+    margin:8rem 0;
+}
+.title-container-cus{
+    height: 300px;
+    background: var(--color-secondary);
+    text-align: center;
+    padding-top:4rem ;
+}
+.title-customer{
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--light);
+}
+.customer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -8rem;
+}
+.customer-box{
+    background: var(--green);
+    padding: 20px;
+    margin: 0 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 4px 12px 0px rgba(37, 37, 37, 0.25);
+    -moz-box-shadow: 0px 4px 12px 0px rgba(37, 37, 37, 0.25);
+    box-shadow: 0px 4px 12px 0px rgba(37, 37, 37, 0.25);
+}
+.customer-box h6{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color:var(--dark);
+}
+.customer-box p{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/* ::::::::::::::::: Section debes saber */
+.destacar_obras{
+    text-align: center;
+    margin: 4rem 0;
+}
+.title-obras{
+    font-size: 1.3em;
+    color: var(--color-primary);
+    margin-bottom: 4rem;
+}
+.obras-p_content{
+    width: 70%;
+    margin: auto;
+}
+.obras-p{
+    width: 100%;
+    text-align: left;
+}
+.span-obras{
+    color: var(--color-primary);
+    font-weight: 600;
+}
+.call_to{
+    background: var(--yellow);
+    height: auto;
+    padding: 50px 0;
+}
+.call_to-content{
+    height: 100%;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.call_to-content h6{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.call_to-content p{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 30px;
+}
+/* :::::::::::::: Footer */
+.footer{
+    background: #164CD8;
+    height: auto;
+    padding:20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    color: var(--light);
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+.footer span{
+    color: var(--light);
+    font-weight: 400;
+    font-size: .5em;
+}
+.fa-instagram{
+    color: var(--light);
+    font-size: 2em;
+}
+.footer-text{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* :::::::::::::::::::::::::::::::::::::. MEDIA QUERIES ::::::::::::::::::::::::::::::::::::: */
+
+@media screen and (min-width: 320px) and (max-width: 991px){
+    img{
+        width:100%;
+    }
+    .menu-container{
+        height: auto;
+    }
+    .navbar-nav{
+        padding-bottom: 30px!important;
+    }
+    .logo{
+        width: 70px;
+        height: 60px;
+    }
+    .row-banner{
+        margin: 0;
+    }
+    .img_banner {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .banner-text{
+        margin-top: 3rem;
+    }
+    .banner-title, .banner-span{
+        font-size: 1.5em;
+    }
+    .banner-p{
+        font-size: 1em;
+    }
+    .btn-content-banner{
+        margin-bottom: 3rem;
+    }
+    /* :::::: work */
+    .work-subtitle{
+        line-height: 30px;
+    }
+    .work-p{
+        font-size: 1em;
+        text-align: left;
+    }
+    .work-img{
+        width: 100%;
+    }
+    /* :::::: customer */
+    .customers{
+        margin: 4rem 0;
+    }
+    .customer-box{
+        margin-bottom: 2rem;
+    }
+    .title-customer{
+        font-size: 1.5em;
+    }
+    /* ::::::: obras-dest */
+    .obras-p_content{
+        width: 100%;
+        padding: 0 20px;
+    }
+    /* call_to */
+    .call_to-content{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .call_to-content p{
+        margin-bottom: 2rem;
+    }
+}
