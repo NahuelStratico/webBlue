@@ -61,6 +61,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .btn{
     width: 80%;
@@ -84,7 +85,7 @@ main{
     display: inline-block;
     color: var(--color-primary);
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 3em;
 }
 
 /* :::: listado de Proveedores */
@@ -116,7 +117,7 @@ main{
     font-weight: 600;
 }
 .proveedores-title{
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 600;
     color: var(--light);
 }
@@ -150,13 +151,17 @@ main{
     .formulario input{
         width:100%;
     }
-    .file-upload{
-        width: 50%!important;
-    }
     .form-p{
         width: 100%;
     }
     .btn{
         width: 100%;
+    }
+    .pasos span{
+        text-align: center;
+        line-height: 47px;
+    }
+    .number{
+        margin: 2rem 0;
     }
 }

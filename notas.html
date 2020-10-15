@@ -68,7 +68,7 @@
             <p class="form-p">Completa tu nombre, teléfono y empresa. <br>
               <b>Luego podes adjuntar el listado.</b>
             </p>
-            <form id="formulario-contacto" method="POST" enctype="multipart/form-data" class="formulario">
+            <form id="formulario-contacto" action="enviar.php"  name="form1" method="POST" enctype="multipart/form-data" class="formulario">
               <input type="text" name="name" class="form-control" aria-describedby="name" placeholder="Nombre">
               <input type="number" name="phone" class="form-control" aria-describedby="number" placeholder="Telefono">
               <input type="email" name="email" class="form-control" aria-describedby="email" placeholder="Email">
@@ -86,7 +86,6 @@
                 <strong class="respuesta"></strong> <span class="mensaje-alerta"></span>
               </div>
             </form>           
-            
           </div>
         </div>
       </div>
@@ -148,7 +147,7 @@
           <div class="col-12 col-md-5 col-listado">
             <p class="proveedores-title">Nota publicada con exito</p>
             <p class="proveedores-text">
-              Tu nota ya esta en todos los kiskos. <br>
+              Tu nota ya esta en todos los kioscos. <br>
               Te enviamos la nota digital para que puedas compartirla por redes sociales
               y ademas la publicamos en nuestro instagram (con una comunidad creciente de profesionales de la construcción) para impulsar tus obras.
             </p>
@@ -183,16 +182,18 @@
    
 
       <!-- AJAX -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+   <script src="js/jquery.js"></script>
 
     <!-- Boostrap Javascript -->
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
 
     
        <!-- Index JS -->
-       <script src="enviar.js"></script> 
+       <!-- <script src="enviar.js"></script>  -->
 </body>
 </html>
